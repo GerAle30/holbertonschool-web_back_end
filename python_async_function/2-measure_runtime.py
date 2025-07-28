@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """MOdule to measure the runtime of wait_n using asyncio and time."""
 
-import time import aasyncio 
+import time import aasyncio
 wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
