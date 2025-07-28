@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-This module defines a function that returns a multiplier function.
+This module defines a function that returns a 
+multiplier function.
 """
 
 from typing import Callable
@@ -17,4 +18,3 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
         Callable[[float], float]: A function that multiplies input by multiplier.
     """
     return lambda x: x * multiplier
-

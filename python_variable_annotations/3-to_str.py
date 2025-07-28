@@ -3,6 +3,7 @@
 This module defines a function that converts a float to a string.
 """
 
+
 def to_str(n: float) -> str:
     """
     Returns the string representation of a float.
@@ -14,4 +15,3 @@ def to_str(n: float) -> str:
         str: String version of the float.
     """
     return str(n)
-
