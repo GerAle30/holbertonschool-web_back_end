@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Hypermedia paginaiton over a CSV dataset
+"""Hypermedia pagination over a CSV dataset
 
 Implements:
     - index_range(page, page_size) to compute slice indices.
     - Server.get_page(page, page_size) to return a page of rows.
-    server.get_hyper(page, page_size) to return data plus hypermedia meta
-    """
+    - Server.get_hyper(page, page_size) to return data plus hypermedia meta
+"""
 
 import csv
 import math
