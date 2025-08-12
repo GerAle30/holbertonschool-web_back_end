@@ -15,7 +15,7 @@ def index_range(page: int, page_size: int) -> Tuple[int, int]:
 
     Returns:
         A tuple (start, end) where start is inclusive and end is exclusive
-        
+
     Raises:
         ValueError: if page or page_size is less than 1.
     """
