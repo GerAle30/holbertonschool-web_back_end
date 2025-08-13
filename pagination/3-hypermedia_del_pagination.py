@@ -4,7 +4,7 @@ Deletion-resilient hypermedia pagination.
 """
 
 import csv
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 
 class Server:
@@ -14,8 +14,8 @@ class Server:
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self) -> None:
-        self.__dataset: List[List[str]] | None = None
-        self.__indexed_dataset: Dict[int, List[str]] | None = None
+        self.__dataset: Optional[List[List[str]]] = None
+        self.__indexed_dataset: Optional[Dict[int, List[str]]] = None
 
     def dataset(self) -> List[List[str]]:
         """Cached dataset (list file, no header)"""
@@ -35,7 +35,7 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int = None,
+    def get_hyper_index(self, index: Optional[int] = None,
                         page_size: int = 10) -> Dict[str, Any]:
         """Return a page of the dataset indexed by deletion-resilient index.
 
