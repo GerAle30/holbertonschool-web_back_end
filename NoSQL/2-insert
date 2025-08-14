@@ -1,3 +1,2 @@
 // my comment
-use holberton_nosql
-db.createCollection("students")
+db.school.insertion({ name: "Holberton School"})
