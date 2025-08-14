@@ -1,0 +1,3 @@
+// my comment
+use holberton_nosql
+db.createCollection("students")
