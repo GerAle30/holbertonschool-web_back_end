@@ -1,2 +1,2 @@
-// Add a new attribute to document with name="Holberton school"
-db.school.update({"name": "Holbertonschool"}, {"$set": {"address": "972 mission street"}}, {"multi": true})
+// Add a new attribute to documents with name="Holberton school"
+db.school.update({"name": "Holberton school"}, {"$set": {"address": "972 mission street"}}, {"multi": true})
