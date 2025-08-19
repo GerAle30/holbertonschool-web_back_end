@@ -1,5 +1,5 @@
 // 4-rest-parameter.js
 
-export default function returnHowArguments(...args) {
-    return args.length;
+export default function returnHowManyArguments(...args) {
+  return args.length;
 }
