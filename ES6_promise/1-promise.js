@@ -3,7 +3,7 @@ export default function getFulllResponseFromApi(success) {
         if (success) {
             resolve({ status: 200, body: 'Success' });
         } else {
-            resolve(new Error('The fake API is not working currently'));
+            resolve({ status: 500, body: 'The fake API is not working currently' });
         }
     });
 }
