@@ -7,9 +7,9 @@ process.stdin.on('data', (data) => {
   if (name) {
     process.stdout.write(`Your name is: ${name}\n`);
   }
-  process.exit();
+  process.end();
 });
 
-process.stdin.on('exit', () => {
+process.stdin.on('end', () => {
   process.stdout.write('This important software is now closing\n');
 });
