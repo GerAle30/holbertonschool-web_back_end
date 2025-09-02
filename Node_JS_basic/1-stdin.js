@@ -7,7 +7,6 @@ process.stdin.on('data', (data) => {
   if (name) {
     process.stdout.write(`Your name is: ${name}\n`);
   }
-  process.exit();
 });
 
 process.stdin.on('end', () => {
