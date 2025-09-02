@@ -5,7 +5,7 @@ process.stdin.on('readable', () => {
   if (chunk !== null) {
     const name = chunk.toString().trim();
     process.stdout.write(`Your name is: ${name}\n`);
-      process.stdin.end();
+
   }
 });
 
