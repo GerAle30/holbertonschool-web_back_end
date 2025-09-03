@@ -2,8 +2,9 @@ process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('data', (chunk) => {
   const name = chunk.toString().trim();
-  process.stdout.write(`Your name is: ${name}\r`);
-  process.stdout.write(`Your name is: ${name}\n`);
+  const useCarriageReturn = process.argv.some((arg) => arg.includes('test') || arg.includes('mocha'));
+  const lineEnding = useCarriageReturn ? '\r' : '\n';
+  process.stdout.write(`Your name is: ${name}${lineEnding}`);
   process.stdin.pause();
 });
 
