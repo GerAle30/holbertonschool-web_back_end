@@ -2,7 +2,8 @@ process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('data', (chunk) => {
   const name = chunk.toString().trim();
-  process.stdout.write(`Your name is: ${name}\r`);
+  const lineEnding = process.stdout.isTTY ? '\n' : '\r';
+  process.stdout.write(`Your name is: ${name}${lineEnding}`);
   process.stdin.pause();
 });
 
