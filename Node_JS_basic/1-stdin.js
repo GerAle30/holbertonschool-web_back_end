@@ -4,7 +4,6 @@ process.stdin.on('data', () => {
   const chunk = process.stdin.read();
   if (chunk !== null) {
     const name = chunk.toString().trim();
-    
     process.stdout.write(`Your name is: ${name}\r\n`);
     process.stdin.end();
   }
@@ -13,4 +12,3 @@ process.stdin.on('data', () => {
 process.stdin.on('end', () => {
   process.stdout.write('This important software is now closing\n');
 });
-
