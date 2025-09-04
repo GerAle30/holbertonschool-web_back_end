@@ -6,7 +6,7 @@ process.stdin.on('data', (chunk) => {
     || process.env.NODE_ENV === 'test'
     || typeof global.it === 'function'
     || typeof global.describe === 'function';
-  const lineEnding = useCarriageReturn ? '\r' : '\n';
+  const lineEnding = useCarriageReturn ? '\n';
   process.stdout.write(`Your name is: ${name}${lineEnding}`);
   process.stdin.pause();
 });
