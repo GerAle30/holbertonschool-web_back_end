@@ -18,7 +18,7 @@
   "devDependencies": {
       "babel-cli": "^6.26.0",
       "babel-preset-env": "^1.7.0",
-      "babel-register": "^6.26.0",
+      "lint": "*",
       "eslint": "^6.8.0",
       "eslint-config-airbnb-base": "^14.2.1",
       "eslint-plugin-import": "^2.29.1",
@@ -30,4 +30,3 @@
       "sinon": "^7.5.0"
   }
 }
-
