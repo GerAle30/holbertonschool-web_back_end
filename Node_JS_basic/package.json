@@ -9,7 +9,7 @@
     "test": "./node_modules/mocha/bin/mocha --require babel-register --exit",
     "test-all": "npm run check-lint && npm test",
     "test-watch": "./node_modules/mocha/bin/mocha --require babel-register --watch",
-    "dev": "nodemon --exec babel-node --presets babel-preset-env ./server.js ./database.csv",
+    "dev": "nodemon --exec babel-node --presets babel-preset-env ./full_server/server.js ./database.csv",
     "full-test": "npm run check-lint && npm test && echo 'All tests passed!'"
   },
   "author": "",
@@ -20,7 +20,10 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
     "chai": "^4.4.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.2.1",
