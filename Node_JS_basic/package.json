@@ -1,11 +1,11 @@
 {
   "name": "node_js_basics",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project contains basic Node.js exercises and examples.",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint",
-    "check-lint": "./node_modules/.bin/eslint [0-9]*.js",
+    "lint": "eslint",
+    "check-lint": "eslint [0-9]*.js",
     "test": "./node_modules/mocha/bin/mocha --require babel-register --exit",
     "test-all": "npm run check-lint && npm test",
     "test-watch": "./node_modules/mocha/bin/mocha --require babel-register --watch",
@@ -35,5 +35,9 @@
     "request": "^2.88.2",
     "sinon": "^7.5.0",
     "supertest": "^7.1.4"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }
